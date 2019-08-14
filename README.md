@@ -10,18 +10,16 @@ API Wrapper to interact with Arkvatar.
 ## Installation
 
 ```shell
-pip install arkvatar-py
+pip install arkvatar
 ```
 
 ## Usage
 
 ```python
 import asyncio
-from arkvatar import Arkvatar
-
+import arkvatar
 
 async def main():
-    arkvatar = Arkvatar()
     identifier = "azerty@gmail.com"
     request = await arkvatar.store("Email", identifier)
     print(request)
