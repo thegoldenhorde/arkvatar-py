@@ -15,6 +15,42 @@ pip install arkvatar
 
 ## Usage
 
+### Show
+
+```python
+import asyncio
+import arkvatar
+
+async def main():
+    identifier = "azerty@gmail.com"
+    request = await arkvatar.show(identifier)
+    print(request)
+
+
+if __name__ == '__main__':
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
+```
+
+### Verify
+
+```python
+import asyncio
+import arkvatar
+
+async def main():
+    identifier = "azerty@gmail.com"
+    request = await arkvatar.verify(identifier)
+    print(request)
+
+
+if __name__ == '__main__':
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
+```
+
+### Store
+
 ```python
 import asyncio
 import arkvatar
